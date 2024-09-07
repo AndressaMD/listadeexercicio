@@ -1,0 +1,26 @@
+/*Escreva um programa em Java para ler as notas da primeira, segunda e terceira avaliações de um aluno, 
+todas valem dez pontos. Calcular a média aritmética simples e escrever uma mensagem que diga se o aluno
+foi ou não aprovado (considerar que média igual ou maior que 7 o aluno é aprovado).
+Escrever também a média calculada. */
+import java.util.Scanner;
+class Exercicio16 {
+  public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);  
+    
+   System.out.print("Digite a primeira nota de 0 a 10: ");
+    double nota1 = scanner.nextDouble();
+  
+   System.out.print("Digite a segunda nota de 0 a 10: ");
+    double  nota2 = scanner.nextDouble();
+
+   System.out.print("Digite a terceira nota de 0 a 10: ");
+    double nota3 = scanner.nextDouble();
+
+  double media = ( nota1 + nota2 + nota3) / 3;
+    if (media >= 7) { 
+   System.out.printf("Média das notas: %.2f%n", media);
+   System.out.println("Resultado: Aprovado");} 
+    else {
+    System.out.printf("Média das notas: %.2f%n", media);
+    System.out.println("Resultado: Reprovado");}
+}}
