@@ -1,0 +1,26 @@
+/*Escreva um algoritmo que recebe dois pontos do plano cartesiano P1 = (x1, y1) e P2 = (x2, y2)
+e calcula a distância entre eles, dada por d(P1, P2) = p (x1 − x2) 2 + (y1 − y2)^2 */
+
+import java.util.Scanner;
+class Exercicio15 {
+  public static void main(String[] args) {
+   Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Digite as coordenadas do ponto P1:");
+    System.out.print("x1: ");
+     double x1 = scanner.nextDouble();
+    System.out.print("y1: ");
+     double y1 = scanner.nextDouble();
+
+    System.out.println("Digite as coordenadas do ponto P2:");
+    System.out.print("x2: ");
+     double x2 = scanner.nextDouble();
+    System.out.print("y2: ");
+     double y2 = scanner.nextDouble();
+
+   double deltaX = x1 - x2;
+   double deltaY = y1 - y2;
+   double distancia = Math.sqrt((deltaX * deltaX) + (deltaY * deltaY));
+ System.out.printf("A distância entre os pontos P1 e P2 é: %.2f%n", distancia);
+
+}}
