@@ -1,0 +1,24 @@
+/*A permissão para uma pessoa votar ou não é determinado pela idade dela, conforme a tabela 4.
+Crie um programa capaz de ler a idade de uma pessoa e imprimir sua classificação eleitoral.*/
+
+import java.util.Scanner;
+class Exercicio18 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.println("Digite em sequência a idade para derteminar sua classificação eleitoral:");
+      int idade = scanner.nextInt();
+  
+  if (idade < 16) { 
+   System.out.println("Não é eleitor.");} 
+  
+  else if (idade <= 17) {
+  System.out.println("É eleitor facultativo.");
+ 
+  } else if (idade >= 18) {
+  System.out.println("Eleitor obrigatório");
+  
+  } else if (idade >= 65) {
+  System.out.println("Eleitor facultativo");}
+
+}}
