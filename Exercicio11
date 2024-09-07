@@ -1,0 +1,20 @@
+/* Para auxiliar motoristas a realizar este cálculo, crie um algoritmo que receba o preço dos dois combustíveis, 
+e informe qual deve ser a escolha, com base no custo */
+
+import java.util.Scanner;
+class Exercicio11 {
+  public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);
+  
+ System.out.println("Digite aqui o valor do litro em reais da gasolina:");
+ double gasolina = scanner.nextDouble();
+
+ System.out.println("Digite aqui o valor do litro em reais do etanol:");
+    double etanol = scanner.nextDouble();
+ 
+  double valor = (etanol / gasolina);
+     if (valor < 0.70) {
+ System.out.println("O litro do etanol está abaixo de 70% do valor da gasolina,logo escolha abastecer por etanol");}
+
+ else { System.out.println("Prefira abastecer com gasolina");
+}}}
