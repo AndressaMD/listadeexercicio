@@ -1,0 +1,20 @@
+//Desenvolva um programa que, dados dois valores A e B, troque os valores de forma que A passe a ter o valor de B e vice-versa. Exiba os valores após a troca.
+
+ import java.util.Scanner;
+ public class Exercicio6 {
+    public static void main(String[] args) {
+   Scanner entry = new Scanner(System.in);
+
+  Float A;    
+  Float B;
+    
+ 
+  System.out.print("Digite o valor do A: ");
+  A = entry.nextFloat();
+
+  System.out.print("Digite o valor do B: ");
+  B = entry.nextFloat();
+
+ System.out.println("O valor de A é " + B + ", logo o valor de B é "+ A);
+}
+}
