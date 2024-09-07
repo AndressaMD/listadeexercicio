@@ -1,0 +1,39 @@
+/*Faça um programa para uma loja de cerâmica que ajuda no cálculo da quantidade de revestimento necessário para uma obra.
+ A pessoa utilizadora deve informar as medidas de largura e comprimento da área que será revestida e da cerâmica escolhida.
+Sempre arredonde o valor para cima, e acrescente dez por cento para o acabamento.*/
+
+import java.util.Scanner;
+class Exercicio12 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Digite a largura da área a ser revestida (em metros):");
+    double largArea = scanner.nextDouble();
+        
+    System.out.println("Digite o comprimento da área a ser revestida (em metros):");
+    double comprimArea = scanner.nextDouble();
+
+    System.out.println("Digite a largura da cerâmica (em metros):");
+    double largCeramica = scanner.nextDouble();
+        
+    System.out.println("Digite o comprimento da cerâmica (em metros):");
+    double comprimCeramica = scanner.nextDouble();
+        
+       double areaTotal = largArea * comprimArea;
+       double areaCeramica = largCeramica * comprimCeramica;
+       double quantidadeSemAcabamento = areaTotal / areaCeramica;
+       double quantidadeComAcabamento = quantidadeSemAcabamento * 1.10;
+        
+       int quantidadeFinal = (int) Math.ceil(quantidadeComAcabamento);
+       System.out.println("Quantidade de peças de cerâmica necessárias (com 10% de acabamento): " + quantidadeFinal);
+
+/* Incremente o programa da questão 6, para informar o valor do metro quadrado 
+  da cerâmica escolhido e o valor total a ser pago. */
+
+     System.out.println("Digite o valor do metro quadrado da cerâmica (em R$):");
+        double valorMetroQuadrado = scanner.nextDouble();
+        double areaTotalCeramica = quantidadeFinal * areaCeramica;
+        double valorTotal = areaTotalCeramica * valorMetroQuadrado;
+     System.out.printf("Valor total a ser pago: R$ %.2f%n", valorTotal);
+
+} }
