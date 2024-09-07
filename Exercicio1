@@ -1,0 +1,25 @@
+//Crie um algoritmo que lê dois números, X e Y , e mostra o resto da divisão entre eles.
+
+ import java.util.Scanner;
+ class Exercicio1 {
+  public static void main(String[] args) {
+  Scanner entry = new Scanner(System.in);  
+  Float x;    
+  Float y;
+  Float resultado;
+  Float resto;  
+ 
+System.out.print("Digite o valor do primeiro número: ");
+ x = entry.nextFloat();
+
+System.out.print("Digite o valor do segundo número: ");
+ y = entry.nextFloat();
+ resultado = x / y;
+
+System.out.println("O valor do resultado é:" + resultado);
+ resto = x % y;
+System.out.println("O valor do dividendo é:" + resto);
+
+
+  }
+}
